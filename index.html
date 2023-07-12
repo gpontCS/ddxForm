@@ -1,0 +1,43 @@
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+<div id="container" class="flex flex-col justify-center items-center h-full">
+  <form id="full" class="max-w-sm mx-auto mt-8 h-full flex flex-col justify-center">
+    <div class="mb-6">
+      <label class="block font-extrabold mb-0 text-[#5d7261] text-2xl"> Distillers Grains | Inventory </label>
+      <label class="block font-extrabold mb-0 text-[#bab9af] text-xl"> Daily Loads On Hand Entry Form </label>
+    </div>
+
+    <div class="grid grid-rows-1 grid-flow-col mb-4">
+      <div class="mb-4">
+        <label class="block font-bold mb-1 text-[#5d7261] text-m" for="date"> Report Date: </label>
+      </div>
+      <div class="mb-4">
+        <input class="appearance-none color-[#384b3c] border rounded text-sm py-1 px-3 leading-tight focus:outline-none focus:shadow-outline" id="date" type="date" name="date" />
+      </div>
+    </div>
+
+    <div class="mb-2">
+      <label class="block font-extrabold mb-1 text-[#5d7261] text-m"> Loads On Hand: </label>
+    </div>
+
+    <div class="grid grid-rows-2 grid-flow-col gap-3 mb-4">
+      <div class="mb-0">
+        <label class="float-right font-bold px-2 mb-0 text-[#ffa400] text-m" for="loads"> Wet DG: </label>
+      </div>
+      <div class="mb-0">
+        <label class="float-right font-bold px-2 mb-0 text-[#ffa400] text-m" for="loads"> Dry DG: </label>
+      </div>
+
+      <div class="mb-0">
+        <input class="appearance-none border-[#384b3c] border rounded py-1 px-2 leading-tight focus:outline-none focus:shadow-outline w-24" id="loadsonhandwet" type="number" name="loads" />
+      </div>
+      <div class="mb-0">
+        <input class="appearance-none border-[#384b3c] border rounded py-1 px-2 leading-tight focus:outline-none focus:shadow-outline w-24" id="loadsonhanddry" type="number" name="loads" />
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center">
+      <button class="text-white font-bold bg-[#5d7261] hover:bg-[#384b3c] py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="submit">Submit</button>
+    </div>
+  </form>
+</div>
